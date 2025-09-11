@@ -1,0 +1,245 @@
+<!doctype html> 
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Resume - Ge_Ann P. Limitares</title>
+  <style>
+    :root{
+      --bg: #a7c7e7; 
+      --accent: #f8a5c2; 
+      --muted: #6b6b6b;
+      --card: #ffffff;
+    }
+    html,body{
+      height:100%;
+      margin:0;
+      font-family: "Segoe UI", Roboto, Arial;
+      background: linear-gradient(135deg,var(--bg), var(--accent));
+      scroll-behavior:smooth;
+    }
+    .wrap{
+      max-width:1000px;
+      margin:32px auto;
+      padding:28px;
+      display:grid;
+      grid-template-columns:320px 1fr;
+      gap:24px;
+    }
+    .card{
+      background:var(--card);
+      border-radius:16px;
+      padding:20px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      position:relative;
+    }
+    .left .photo{
+      width:100%;
+      padding-top:100%;
+      position:relative;
+      border-radius:12px;
+      overflow:hidden;
+      background:linear-gradient(180deg,#ffeef7,#fff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      animation:floatSoft 6s ease-in-out infinite;
+    }
+    .photo img{
+      position:absolute;
+      left:50%;top:50%;
+      transform:translate(-50%,-50%);
+      width:80%;height:auto;
+      border-radius:50%;
+      box-shadow:0 6px 18px rgba(0,0,0,0.15);
+    }
+    @keyframes floatSoft{
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(-6px);}
+    }
+    h1{margin:10px 0 4px;font-size:22px;color:#222;}
+    p.sub{margin:0 0 6px;color:var(--muted);font-size:14px;}
+    .section-title{
+      font-weight:700;
+      margin-top:18px;
+      margin-bottom:8px;
+      color:#333;
+      border-left:4px solid var(--accent);
+      padding-left:10px;
+    }
+    .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+    .badge{
+      display:inline-block;
+      padding:6px 10px;
+      border-radius:999px;
+      background:linear-gradient(90deg,#a7c7e7,#f8a5c2);
+      color:white;
+      font-weight:600;
+      font-size:13px;
+    }
+
+    
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+      gap:12px;
+      margin-top:10px;
+    }
+    .skill{
+      background:#fff0f6;
+      border:1px solid rgba(255,150,200,0.3);
+      padding:12px;
+      border-radius:12px;
+      font-size:13px;
+      text-align:center;
+      font-weight:600;
+      transition:0.3s;
+    }
+    .skill:hover{
+      background:var(--accent);
+      color:#fff;
+      transform:scale(1.05);
+    }
+
+    
+    .edu-item{
+      margin-bottom:12px;
+      padding:10px;
+      border-left:4px solid var(--accent);
+      background:linear-gradient(90deg,#fff,#fdf5f9);
+      border-radius:8px;
+      opacity:0;
+      transform:translateY(20px);
+      transition:all 0.7s ease;
+    }
+    .edu-item.show{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    
+    .references li{
+      margin-bottom:14px;
+      padding:12px;
+      border:1px solid #ddd;
+      border-radius:10px;
+      background:linear-gradient(120deg,#fefefe,#fdf0f7);
+      box-shadow:0 3px 6px rgba(0,0,0,0.05);
+      transition:0.3s;
+      list-style:none;
+    }
+    .references li:hover{
+      transform:scale(1.03);
+      border-color:var(--accent);
+      box-shadow:0 6px 14px rgba(0,0,0,0.12);
+    }
+    .references strong{color:#333;font-size:15px;}
+    .references .contact-info{font-size:13px;color:#444;margin-top:6px;}
+    
+    @media(max-width:800px){
+      .wrap{grid-template-columns:1fr;}
+      .left{order:2}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+   
+    <div class="card left">
+      <div class="photo"><img src="lim.jpg" alt="Profile photo"></div>
+      <h1>Ge_Ann P. Limitares</h1>
+      <p class="sub"><strong>Nickname:</strong> Palce</p>
+      <div class="section-title">Contact</div>
+      <p class="sub">📍 Address: Gozon Compund, Malabon City</p>
+      <p class="sub">📱 Mobile: +63 991 484 0645</p>
+      <p class="sub">✉️ Email: limitaresgeann.@gmail.com</p>
+      <div class="section-title">Personal Details</div>
+      <div class="info-grid">
+        <div><strong>Birthday:</strong><br> 12/09/2005</div>
+        <div><strong>Age:</strong><br> 19</div>
+        <div><strong>Religion:</strong><br> Catholic</div>
+        <div><strong>Nationality:</strong><br> Filipino</div>
+        <div><strong>Height:</strong><br> 4'11</div>
+        <div><strong>Weight:</strong><br> 72 kg</div>
+      </div>
+    </div>
+
+    <div class="card right">
+      <div><div class="badge">Objective</div></div>
+      <h3 class="section-title">Objective / Purpose of Application</h3>
+      <p class="sub">I aim to gain valuable experience and further develop my knowledge in the field of Information Technology. As a second-year <strong>Bachelor of Science in Information Technology</strong> student, I want to apply what I have learned in real-world situations, sharpen my technical and creative skills, and build a strong foundation for my future career. My ultimate goal is to contribute effectively to a professional environment while continuously growing as an IT practitioner.</p>
+
+      <h3 class="section-title">Related IT Skills</h3>
+      <div class="skills">
+        <div class="skill">HTML (standard)</div>
+        <div class="skill">CSS (average)</div>
+        <div class="skill">C# (average)</div>
+        <div class="skill">SQL (basic)</div>
+        <div class="skill">Cisco Packet Tracer (basic)</div>
+        <div class="skill">PC Assembly & Troubleshooting</div>
+        <div class="skill">Animation Editing</div>
+        <div class="skill">Adobe Photoshop</div>
+        <div class="skill">MS Office</div>
+        <div class="skill">Git / GitHub</div>
+        <div class="skill">Basic Networking</div>
+        <div class="skill">Figma (UI/UX Design – basic)</div>
+      </div>
+
+      <h3 class="section-title">Educational Background</h3>
+      <div class="edu-item"><strong>Epifanio Delos Santos Elementary School</strong><br> Elementary (2012-2018)</div>
+      <div class="edu-item"><strong>Tugatog National High School</strong><br> Junior High - STEM (2018-2022)</div>
+      <div class="edu-item"><strong>Arellano University Jose Rizal Campus</strong><br> Senior High - STEM (2022-2024)</div>
+      <div class="edu-item"><strong>Global Reciprocal Colleges</strong><br> Bachelor of Science in Information Technology (Currently 2nd year)</div>
+
+      <h3 class="section-title">Working Experience</h3>
+      <p class="sub">Online Buy and Sell (Self-Employed) / Facebook Marketplace & Group Pages (2021-2025)</p>
+
+      <h3 class="section-title">Additional Information</h3>
+      <p class="sub">I am a curious and adaptable person who enjoys trying new opportunities in both business and technology. My experience in online selling helped me become more responsible, improve my communication, and be creative in digital spaces. I chose the field of Information Technology because it offers many chances to learn and grow. With passion and determination, I believe I can enjoy this journey and become a skilled IT professional.</p>
+
+      <h3 class="section-title">Character References</h3>
+      <ul class="references">
+        <li>
+          <strong>Franco Badlisan</strong><br>
+          Ship Repair Worker
+          <div class="contact-info">
+            📱 09942738113<br>
+            ✉️ francobadlisan@gmail.com
+          </div>
+        </li>
+        <li>
+          <strong>Ashley Esparrago</strong><br>
+          Teacher – Major in Filipino
+          <div class="contact-info">
+            📱 0969455413<br>
+            ✉️ ashley.esparrago24@gmail.com
+          </div>
+        </li>
+        <li>
+          <strong>Rhyjll Narag</strong><br>
+          Former SHS Teacher – Physics
+          <div class="contact-info">
+            📱 09694554133<br>
+            ✉️ rhyjll.narag01@gmail.com
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    const eduItems = document.querySelectorAll('.edu-item');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('show');
+        }
+      });
+    }, {threshold:0.3});
+
+    eduItems.forEach(item => observer.observe(item));
+  </script>
+</body>
+</html>
+
+     
